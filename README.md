@@ -16,7 +16,7 @@ Okay, I need to start thinking about getting down to work, so where am I?
 
 TODO:
 
-* get state object in reducer passed down to listpage component (mapStateToProps).  Might have to review how to do that...
+* _Done_: get state object in reducer passed down to listpage component (mapStateToProps).  Might have to review how to do that...
 
 * get the add and edit buttons working to fire the appropriate action creator and fire global state object gets updated
 
@@ -25,4 +25,4 @@ TODO:
 
 * At some point, I'll think about styling.  Right now, I just want to get it to work.  Maybe then I can scrape however much ugly off I have time for.
 
-* Oh yeah, get rid of them *.swp* files!  Update the .gitignore
+* _Done_: Oh yeah, get rid of them *.swp* files!  Update the .gitignore
