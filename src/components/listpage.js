@@ -1,36 +1,15 @@
 import React, { Component } from 'react';
 import Smallcompany from './smallcompany';
+import {connect} from 'react-redux';
 
 class Listpage extends Component {
 
     constructor(props){
         super(props);
-        this.state = {
-            companies: [
-                {
-                    name: "Foo Company",
-                    contact: "Joe Foo",
-                    financials: "Really Good!",
-                    status: "still researching"
-                },
-                {
-                    name: "Bar Company",
-                    contact: "Joe Bar",
-                    financials: "Pretty Good!",
-                    status: "still researching"
-                },
-                {
-                    name: "Baz Company",
-                    contact: "Joe Baz",
-                    financials: "Not too bad, really",
-                    status: "still researching"
-                }
-            ]
-        }
     }
 
   render() {
-      const companies = this.state.companies.map((company, index) => {
+      const companies = this.props.companies.map((company, index) => {
           return (
               <div>
                   <hr />
@@ -52,4 +31,11 @@ class Listpage extends Component {
   }
 }
 
-export default Listpage;
+const mapStateToProps = state => {
+    return {
+        companies: state.companies
+    }
+}
+
+
+export default connect(mapStateToProps)(Listpage)
