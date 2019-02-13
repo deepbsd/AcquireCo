@@ -24,3 +24,5 @@ TODO:
   method?
 
 * At some point, I'll think about styling.  Right now, I just want to get it to work.  Maybe then I can scrape however much ugly off I have time for.
+
+* Oh yeah, get rid of them *.swp* files!  Update the .gitignore
