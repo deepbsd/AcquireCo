@@ -9,3 +9,18 @@ The App also allows you to create, update and delete data for each company.
 
 Because of time constraints, this app will not get a back end, so changes to data will only be made to the React DOM.  Each time
 the app reloads, the data changes will be lost (ie, no persistence).
+
+# Status
+
+Okay, I need to start thinking about getting down to work, so where am I?
+
+TODO:
+
+* get state object in reducer passed down to listpage component (mapStateToProps).  Might have to review how to do that...
+
+* get the add and edit buttons working to fire the appropriate action creator and fire global state object gets updated
+
+* I'm going to need to figure out that companyView or Largecompany component.  What do I want to see on that?  Is that where I want to do the updateComponent
+  method?
+
+* At some point, I'll think about styling.  Right now, I just want to get it to work.  Maybe then I can scrape however much ugly off I have time for.
