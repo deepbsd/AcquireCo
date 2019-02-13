@@ -1,0 +1,102 @@
+{
+
+    "Foo Gadgets": {
+        "companyInfo": {
+            "description": "Top makers of gadgets in Northern America.",
+            "competition": ["Guu Gadgets", "Boo Boo Gadgets", "Gadgets A Go Go"],
+            "country": "USA",
+            "city": "Atlanta",
+        },
+       "keyContacts": {
+            "primary": {
+                "Name": "Jerry Schmo",
+                "Role": "Senior VP",
+                "Phone": "123 456 7899",
+                "email": "jschmo@foogadgets.com",
+                "office": "Atlanta, GA"
+             },
+       },
+       "status": { 
+           "researching": true, 
+           "pending approval": true, 
+           "approved": false, 
+           "declined": false,
+       },
+       "financial": {
+            "annual sales": 350000,
+            "total revenue": 300000,
+            "quick ratio": 0.25,
+            "current ratio": 0.41,
+            "total debt/equity": 0.17,
+            "activity ratio": 0.16,
+       }
+    },
+
+    "Boo Boo Gadgets": {
+        "companyInfo": {
+            "description": "2nd Top makers of gadgets in Northern America.",
+            "competition": ["Foo Gadgets", "Guu Gadgets", "Gadgets A Go Go"],
+            "country": "USA",
+            "city": "Atlanta",
+        },
+       "keyContacts": {
+            "primary": {
+                "Name": "Jerry Do",
+                "Role": "Senior VP",
+                "Phone": "123 456 7899",
+                "email": "larry@booboogadgets.com",
+                "office": "Atlanta, GA",
+             },
+       },
+       "status": { 
+           "researching": true, 
+           "pending approval": true, 
+           "approved": false, 
+           "declined": false,
+       },
+       "financial": {
+            "annual sales": 275000,
+            "total revenue": 315000,
+            "quick ratio": 0.20,
+            "current ratio": 0.31,
+            "total debt/equity": 0.27,
+            "activity ratio": 0.13,
+       }
+    },
+
+    "Guu Gadgets": {
+        "companyInfo": {
+            "description": "3rd Top makers of gadgets in Northern America.",
+            "competition": ["Foo Gadgets", "Boo Boo Gadgets", "Gadgets A Go Go"],
+            "country": "USA",
+            "city": "Atlanta",
+        },
+       "keyContacts": {
+            "primary": {
+                "Name": "Merry Mary",
+                "Role": "Senior VP",
+                "Phone": "123 456 7899",
+                "email": "merry@guugadgets.com",
+                "office": "Atlanta, GA",
+             },
+       },
+       "status": { 
+           "researching": true, 
+           "pending approval": true, 
+           "approved": false, 
+           "declined": false,
+       },
+       "financial": {
+            "annual sales": 225000,
+            "total revenue": 285000,
+            "quick ratio": 0.20,
+            "current ratio": 0.25,
+            "total debt/equity": 0.33,
+            "activity ratio": 0.12,
+       }
+    },
+
+
+
+
+}
