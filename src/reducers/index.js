@@ -30,24 +30,20 @@ const initialState = {
 export const acquireCoReducer = (state=initialState, action) => {
     if(action.type === actions.ADD_COMPANY){
         return Object.assign({}, state, {
-            companies: [...state.companies]
-        })
+            companies: [...state.companies, action.company]
+        });
     }
     else if (action.type === actions.DELETE_COMPANY){
-        let companyArr = [...state.companies];
-        let index = array.indexOf(action.company);
-        companyArr.splice(index, 1);
         return Object.assign({}, state, {
-            companies: companyArr
-        })
+            companies: state.companies.map(company => 
+               company.id === action.company.id ? action.company : company
+            )
+        });
     }
     else if (action.type === actions.UPDATE_COMPANY){
-        let companyArr = [...state.companies];
-        let index = array.indexOf(action.company);
-        companyArr[index] = action.company;
         return Object.assign({}, state, {
-            companies: companyArr
-        })
+            companies: state.companies.filter(company => company.id !== action.company.id)
+        });
     }
 
     return state;

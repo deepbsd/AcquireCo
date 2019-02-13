@@ -1,6 +1,6 @@
 
 export const ADD_COMPANY = 'ADD_COMPANY';
-export addCompany = company => ({
+export const addCompany = company => ({
     type: ADD_COMPANY,
     company
 });
