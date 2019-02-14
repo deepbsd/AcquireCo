@@ -29,6 +29,7 @@ const initialState = {
 
 export const acquireCoReducer = (state=initialState, action) => {
     if(action.type === actions.ADD_COMPANY){
+        console.log("action.company: ",action.company)
         return Object.assign({}, state, {
             companies: [...state.companies, action.company]
         });

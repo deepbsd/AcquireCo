@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Smallcompany from './smallcompany';
 import {connect} from 'react-redux';
 import {deleteCompany} from '../actions';
-import {AddCompany} from './addcompany';
-//import {Redirect} from 'react-router-dom';
 import store from '../store';
 
 class Listpage extends Component {

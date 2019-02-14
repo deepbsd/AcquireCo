@@ -18,6 +18,10 @@ TODO:
 
 * _Done_: get state object in reducer passed down to listpage component (mapStateToProps).  Might have to review how to do that...
 
+* _Done_: the delete company button throws an error.  I've got a syntax problem in there
+
+* Add company component tries to update state, but payload is undefined... working that problem now.
+
 * get the add and edit buttons working to fire the appropriate action creator and fire global state object gets updated
 
 * I'm going to need to figure out that companyView or Largecompany component.  What do I want to see on that?  Is that where I want to do the updateComponent

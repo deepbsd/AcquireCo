@@ -7,6 +7,10 @@ import {Redirect} from 'react-router-dom';
 
 class AddCompany extends Component {
 
+    state = {
+        toListCompanies: false
+    }
+
     handleSubmit = (ev) => {
         ev.preventDefault();
         const name = this.getCompanyName.value;
@@ -26,17 +30,16 @@ class AddCompany extends Component {
             companyData
         });
        
-        // reset the default values...
-        this.getCompanyName = '';
-        this.getCompanyContact = '';
-        this.getCompanyFinancials = '';
-        this.getCompanyStatus = '';
-        
         //Leave this page...
-        return <Redirect to="/listpage" />
+        this.setState({
+            toListCompanies: true
+        })
     }
 
     render() {
+        if (this.state.toListCompanies){
+            return <Redirect to="listpage" />
+        }
 
     return (
       <div className="AddCompany">
