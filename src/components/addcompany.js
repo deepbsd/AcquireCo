@@ -1,39 +1,71 @@
 import React, { Component } from 'react';
-import Smallcompany from './smallcompany';
+//import Smallcompany from './smallcompany';
 import {connect} from 'react-redux';
+import {Redirect} from 'react-router-dom';
 //import {deleteCompany} from '../actions';
 //import store from '../store'
 
-class Addextends Component {
+class AddCompany extends Component {
 
-    constructor(props){
-        super(props);
-        //this.deleteCompany = this.deleteCompany.bind(this);
+    handleSubmit = (ev) => {
+        ev.preventDefault();
+        const name = this.getCompanyName.value;
+        const contact = this.getCompanyContact.value;
+        const financials = this.getCompanyFinancials.value;
+        const status = this.getCompanyStatus.value;
+
+        const companyData = {
+            id: new Date(),
+            name,
+            contact,
+            financials,
+            status
+        }
+        this.props.dispatch({
+            type: 'ADD_COMPANY',
+            companyData
+        });
+       
+        // reset the default values...
+        this.getCompanyName = '';
+        this.getCompanyContact = '';
+        this.getCompanyFinancials = '';
+        this.getCompanyStatus = '';
+        
+        //Leave this page...
+        return <Redirect to="/listpage" />
     }
 
-    //deleteCompany = (ev,company) => {
-    //  ev.preventDefault();
-    //  store.dispatch(deleteCompany(company));
-    //  console.log("companies: ",this.props.companies)
-    //}
-
     render() {
-      const companies = this.props.companies.map((company, index) => {
-          return (
-              <div>
-                  <hr />
-                  <Smallcompany key={index} {...company} />
-                  <button className="listButton">Edit Company</button>
-                  <button className="listButton" onClick={(ev) => this.deleteCompany(ev, company)} >Delete Company</button>
-              </div>
-          )
-      })
 
     return (
-      <div className="AddEdit">
-        <h1>Companies Under Consideration</h1>
-          <button className="AddEdit">Add Company</button>
-          {companies}
+      <div className="AddCompany">
+        <h1>Add a New Company</h1>
+        <form className="addCompanyForm" onSubmit={this.handleSubmit}>
+           <div className="formGroup">
+               <label htmlFor="formInput">Name of Company</label><br />
+               <input type="text" ref={(input)=>this.getCompanyName = input}  />
+           </div>
+
+           <div className="formGroup">
+               <label htmlFor="formInput">Contact at Company</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyContact = input} />
+           </div>
+
+           <div className="formGroup">
+               <label htmlFor="formInput">Financials</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyFinancials = input} />
+           </div>
+
+           <div className="formGroup">
+               <label htmlFor="formInput">Status</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyStatus = input} />
+           </div>
+           <button>
+              Submit
+           </button>
+
+        </form>
       </div>
     );
   }

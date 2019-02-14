@@ -2,19 +2,28 @@ import React, { Component } from 'react';
 import Smallcompany from './smallcompany';
 import {connect} from 'react-redux';
 import {deleteCompany} from '../actions';
-import store from '../store'
+import {AddCompany} from './addcompany';
+//import {Redirect} from 'react-router-dom';
+import store from '../store';
 
 class Listpage extends Component {
 
     constructor(props){
         super(props);
         this.deleteCompany = this.deleteCompany.bind(this);
+        this.addCompanyRoute = this.addCompanyRoute.bind(this);
     }
 
     deleteCompany = (ev,company) => {
       ev.preventDefault();
       store.dispatch(deleteCompany(company));
       console.log("companies: ",this.props.companies)
+    }
+
+    // I wonder if this resets state from the store??
+    addCompanyRoute(){
+        let path = `addcompany`;
+        this.props.history.push(path);
     }
 
     render() {
@@ -32,7 +41,7 @@ class Listpage extends Component {
     return (
       <div className="Listpage">
         <h1>Companies Under Consideration</h1>
-          <button className="AddCompany">Add Company</button>
+          <button className="AddCompany" onClick={this.addCompanyRoute}>Add Company</button>
           {companies}
       </div>
     );
