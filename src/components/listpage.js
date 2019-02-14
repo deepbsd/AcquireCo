@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 import Smallcompany from './smallcompany';
 import {connect} from 'react-redux';
+import store from '../store'
 
 class Listpage extends Component {
 
-    constructor(props){
-        super(props);
+    deleteCompany = (ev,id) => {
+      ev.preventDefault();
+      alert("id: ", id)
     }
 
-  render() {
+    render() {
       const companies = this.props.companies.map((company, index) => {
           return (
               <div>
                   <hr />
                   <Smallcompany key={index} {...company} />
-                  <button className="EditCompany">Edit Company</button>
-                  <button className="EditCompany">Delete Company</button>
+                  <button className="listButton">Edit Company</button>
+                  <button className="listButton" onClick={(ev) => this.deleteCompany(company.id)} >Delete Company</button>
               </div>
           )
       })
@@ -23,9 +25,8 @@ class Listpage extends Component {
     return (
       <div className="Listpage">
         <h1>Companies Under Consideration</h1>
-        {companies}
-        <hr />
-        <button className="AddCompany">Add Company</button>
+          <button className="AddCompany">Add Company</button>
+          {companies}
       </div>
     );
   }
