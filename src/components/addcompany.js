@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import Smallcompany from './smallcompany';
 import {connect} from 'react-redux';
-import {deleteCompany} from '../actions';
-import store from '../store'
+//import {deleteCompany} from '../actions';
+//import store from '../store'
 
-class Listpage extends Component {
+class Addextends Component {
 
     constructor(props){
         super(props);
-        this.deleteCompany = this.deleteCompany.bind(this);
+        //this.deleteCompany = this.deleteCompany.bind(this);
     }
 
-    deleteCompany = (ev,company) => {
-      ev.preventDefault();
-      store.dispatch(deleteCompany(company));
-      console.log("companies: ",this.props.companies)
-    }
+    //deleteCompany = (ev,company) => {
+    //  ev.preventDefault();
+    //  store.dispatch(deleteCompany(company));
+    //  console.log("companies: ",this.props.companies)
+    //}
 
     render() {
       const companies = this.props.companies.map((company, index) => {
@@ -30,9 +30,9 @@ class Listpage extends Component {
       })
 
     return (
-      <div className="Listpage">
+      <div className="AddEdit">
         <h1>Companies Under Consideration</h1>
-          <button className="AddCompany">Add Company</button>
+          <button className="AddEdit">Add Company</button>
           {companies}
       </div>
     );
@@ -46,4 +46,4 @@ const mapStateToProps = state => {
 }
 
 
-export default connect(mapStateToProps)(Listpage)
+export default connect(mapStateToProps)(AddCompany)
