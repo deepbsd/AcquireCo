@@ -20,7 +20,7 @@ TODO:
 
 * _Done_: the delete company button throws an error.  I've got a syntax problem in there
 
-* Add company component tries to update state, but payload is undefined... working that problem now.
+* _Fixed_: Add company component tries to update state, but payload is undefined... working that problem now.
 
 * get the add and edit buttons working to fire the appropriate action creator and fire global state object gets updated
 

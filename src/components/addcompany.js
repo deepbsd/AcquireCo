@@ -18,16 +18,19 @@ class AddCompany extends Component {
         const financials = this.getCompanyFinancials.value;
         const status = this.getCompanyStatus.value;
 
-        const companyData = {
+        const company = {
             id: new Date(),
             name,
             contact,
             financials,
             status
         }
+
+        console.log("Company: ",company)
+
         this.props.dispatch({
             type: 'ADD_COMPANY',
-            companyData
+            company
         });
        
         //Leave this page...
