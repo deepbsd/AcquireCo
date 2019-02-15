@@ -7,21 +7,24 @@ const initialState = {
                 name: "Foo Company",
                 contact: "Joe Foo",
                 financials: "Really Good!",
-                status: "still researching"
+                status: "still researching",
+                editing: false
             },
             {
                 id: 1002,
                 name: "Bar Company",
                 contact: "Joe Bar",
                 financials: "Pretty Good!",
-                status: "still researching"
+                status: "still researching",
+                editing: false
             },
             {
                 id: 1003,
                 name: "Baz Company",
                 contact: "Joe Baz",
                 financials: "Not too bad, really",
-                status: "still researching"
+                status: "still researching",
+                editing: false
             }
     ]
 }
@@ -29,7 +32,7 @@ const initialState = {
 
 export const acquireCoReducer = (state=initialState, action) => {
     if(action.type === actions.ADD_COMPANY){
-        console.log("action.company: ",action)
+        //console.log("action.company: ",action)
         return Object.assign({}, state, {
             companies: [...state.companies, action.company]
         });

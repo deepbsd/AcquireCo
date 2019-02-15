@@ -23,7 +23,8 @@ class AddCompany extends Component {
             name,
             contact,
             financials,
-            status
+            status,
+            editing: false
         }
 
         console.log("Company: ",company)
