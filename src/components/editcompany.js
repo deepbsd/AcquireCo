@@ -1,31 +1,53 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-//import {Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 
 
 class EditCompany extends Component {
 
+    state = {
+        toListCompanies: false
+    }
+
     handleEdit = (ev) => {
         ev.preventDefault();
-        const newName = this.getCompanyName.value;
-        const newContact = this.getCompanyContact.value;
-        const newFinancials = this.getCompanyFinancials.value;
-        const newStatus = this.getCompanyStatus.value;
+        const name = this.getCompanyName.value;
+        const contact = this.getCompanyContact.value;
+        const financials = this.getCompanyFinancials.value;
+        const status = this.getCompanyStatus.value;
 
         const company = {
-            newName,
-            newContact,
-            newFinancials,
-            newStatus,
-            editing: false
+            id: this.props.location.state.id,
+            name,
+            contact,
+            financials,
+            status
         }
-        this.props.dispatch({type: 'UPDATE_COMPANY', id: this.props.company.id, company: company})
+        //console.log("what's my id? ", this.props.location.state.id)
+
+        this.props.dispatch({type: 'UPDATE_COMPANY', company: company})
+    
+        //Leave this page...
+        this.setState({
+            toListCompanies: true
+        })
+    
     }
+
+
+
     render(){
 
-        if (true){
-            console.log("company? ",this.props.location.state)
+        if (this.state.toListCompanies){
+            return <Redirect to="listpage" />
         }
+        //if (true){
+            //let that = this;
+            //setTimeout(function(){
+            //    console.log("company? ",that.props.location.state)
+            //    console.log("Companies in store: ",that.props.companies)
+            //},1000)
+        //}
 
         return(
           <div className="editCompany">
