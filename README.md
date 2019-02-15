@@ -22,9 +22,17 @@ Tests were not mentioned in the assignment, so I'm using my time for getting the
 
 I have the CRUD operations working.  Schema is extremely simple.  Not sure how complex to make it in the limited time.
 
+4:50pm Friday:  I got the landing page sorta done and have a header working.  I guess I need to work on the schema and the individual
+company view now and flesh that out...
+
 TODO:
 
-* I think I'll get a header up  and put an image on the Landing page next.
+* Okay, I'm gonna have to address the schema issue and make Smallcompany show some more information, which is going to ripple through
+  everything else, but that's okay.  It's gotta be done!
+
+* _Done_: scrape some ugly off and spiff up the appearance a little.
+
+* _Done_: I think I'll get a header up  and put an image on the Landing page next.
 
 * _Done_: get state object in reducer passed down to listpage component (mapStateToProps).  Might have to review how to do that...
 
