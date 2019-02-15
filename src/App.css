@@ -10,6 +10,36 @@
   color: white;
   margin: 10px 5px;
   padding: 9px;
+  border-radius: 5px;
+}
+
+.Button:hover {
+    cursor: pointer;
+}
+
+.Header {
+    background-color: gray;
+    color: white;
+    display: inline;
+}
+
+.Header a {
+    margin: 5px 15px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: maroon;
+}
+
+.Links {
+    color: white;
+    background-color: gray;
+    padding: 15px 20px;
+    text-align: right;
 }
 
 hr {
@@ -39,10 +69,12 @@ input {
 
 .Linkbutton{
     background: gray;
+    border: none;
     color: white;
     padding: 10px;
 }
 
+/*
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -57,4 +89,4 @@ input {
 .App-link {
   color: #61dafb;
 }
-
+*/

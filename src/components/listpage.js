@@ -44,8 +44,8 @@ class Listpage extends Component {
                   <div key={index}>
                       <hr />
                       <Smallcompany key={index} {...company} />
-                      <button className="Button" onClick={(ev) => this.editCompanyRoute(ev, company)}>Edit Company</button>
-                      <button className="Button" onClick={(ev) => this.deleteCompany(ev, company)} >Delete Company</button>
+                      <button className="Button" onClick={(ev) => this.editCompanyRoute(ev, company)}>Edit </button>
+                      <button className="Button" onClick={(ev) => this.deleteCompany(ev, company)} >Delete </button>
                   </div>
           )
       })
