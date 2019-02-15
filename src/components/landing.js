@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Redirect} from 'react-router-dom';
+import landingImage from '../images/shaking_hands.jpg';
 
 
 
@@ -28,6 +29,7 @@ class Landing extends Component {
     return (
       <div className="App">
         <div className="Wrapper">
+            <img className="landingImg" src={landingImage} alt="Splash Image" />
             <h1>Welcome to AcquireCo!</h1>
 
             <p>With AcquireCo you can check on your latest company targets for acquisition and check their status, review their

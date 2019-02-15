@@ -21,6 +21,11 @@ label {
     text-align: left;
 }
 
+.landingImg{
+    height:100%;
+    width: 100%;
+}
+
 input {
     margin-top: 5px;
 }

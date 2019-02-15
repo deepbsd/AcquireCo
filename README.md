@@ -24,6 +24,8 @@ I have the CRUD operations working.  Schema is extremely simple.  Not sure how c
 
 TODO:
 
+* I think I'll get a header up  and put an image on the Landing page next.
+
 * _Done_: get state object in reducer passed down to listpage component (mapStateToProps).  Might have to review how to do that...
 
 * _Done_: the delete company button throws an error.  I've got a syntax problem in there
@@ -34,7 +36,7 @@ TODO:
 
 * _Fixed_: the actions and reducer were not working because the parameter had the wrong structure, so the state object didn't update
 
-* I'm going to need to figure out that companyView.  Do we want one of those?  It's not in the assignment.  Probably don't have time for it.
+* _Do I need this?__ I'm going to need to figure out that companyView.  Do we want one of those?  It's not in the assignment.  Probably don't have time for it.
 
 * At some point, I'll think about styling.  Right now, I just want to get it to work.  Maybe then I can scrape however much ugly off I have time for.
 
