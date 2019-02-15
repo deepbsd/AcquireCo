@@ -4,18 +4,17 @@ import {Link} from 'react-router-dom';
 
 export default class NavItem extends Component {
 
-    constructor(props){
-        super(props);
-        this.handleClick = this.handleClick.bind(this);
-    }
+    //constructor(props){
+    //    super(props);
+    //}
 
-    handleClick(ev){
-        console.log("target: ",ev.target)
-    }
+    //handleClick(ev){
+    //    console.log("debug: route target --> ",ev.target)
+    //}
 
     render(){
         return (
-              <Link to={{pathname: this.props.href}} onClick={this.handleClick}>{this.props.link}</Link>
+              <Link to={{pathname: this.props.href}} >{this.props.link}</Link>
         );
     }
 

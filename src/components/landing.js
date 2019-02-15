@@ -29,10 +29,10 @@ class Landing extends Component {
     return (
       <div className="App">
         <div className="Wrapper">
-            <img className="landingImg" src={landingImage} alt="Splash Image" />
+            <img className="landingImg" src={landingImage} alt="SplashImg" />
             <h1>Welcome to AcquireCo!</h1>
 
-            <p>With AcquireCo you can check on your latest company targets for acquisition and check their status, review their
+            <p className="IntroPara">With AcquireCo you can check on your latest company targets for acquisition and check their status, review their
         financials and look up personnel contacts at their company</p>
 
             <button className="Linkbutton"  onClick={this.proceed}>Proceed</button>
