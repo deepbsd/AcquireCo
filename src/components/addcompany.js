@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-//import Smallcompany from './smallcompany';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
-//import {deleteCompany} from '../actions';
-//import store from '../store'
 
 class AddCompany extends Component {
 
@@ -27,7 +24,7 @@ class AddCompany extends Component {
             editing: false
         }
 
-        console.log("Company: ",company)
+        //console.log("Company: ",company)
 
         this.props.dispatch({
             type: 'ADD_COMPANY',
@@ -68,7 +65,7 @@ class AddCompany extends Component {
                <label htmlFor="formInput">Status</label><br />
                <input type="text"  ref={(input)=>this.getCompanyStatus = input} />
            </div>
-           <button>
+           <button className="Button">
               Submit
            </button>
 

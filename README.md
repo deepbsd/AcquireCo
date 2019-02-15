@@ -22,11 +22,11 @@ TODO:
 
 * _Fixed_: Add company component tries to update state, but payload is undefined... working that problem now.
 
-* get the add and edit buttons working to fire the appropriate action creator and fire global state object gets updated
+* _Done_: get the add and edit buttons working to fire the appropriate action creator and fire global state object gets updated
 
 * I'm going to need to figure out that companyView or Largecompany component.  What do I want to see on that?  Is that where I want to do the updateComponent
   method?
 
 * At some point, I'll think about styling.  Right now, I just want to get it to work.  Maybe then I can scrape however much ugly off I have time for.
 
-* _Done_: Oh yeah, get rid of them *.swp* files!  Update the .gitignore
+* _Not Done_: Oh yeah, get rid of them *.swp* files!  Update the .gitignore  Have to revisit this...

@@ -4,6 +4,23 @@
   text-align: center;
 }
 
+.Button{
+  background: gray;
+  border: none;
+  color: white;
+  margin: 10px 5px;
+  padding: 9px;
+}
+
+hr {
+  width: 80%;
+}
+
+.label {
+    margin: 7px 0;
+    text-align: left;
+}
+
 .Wrapper{
 }
 
@@ -11,7 +28,6 @@
     background: gray;
     color: white;
     padding: 10px;
-
 }
 
 .App-header {

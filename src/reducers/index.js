@@ -35,7 +35,7 @@ export const acquireCoReducer = (state=initialState, action) => {
         });
     }
     else if (action.type === actions.UPDATE_COMPANY){
-        console.log("action.company.id: ",action.company)
+        //console.log("action.company.id: ",action.company)
         return Object.assign({}, state, {
             companies: state.companies.map(company => company.id === action.company.id ? action.company : company )
         });

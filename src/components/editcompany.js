@@ -54,34 +54,34 @@ class EditCompany extends Component {
             <h2>Edit Company</h2>
             <form onSubmit={this.handleEdit} >
                <div className="formGroup">
-                   <label htmlFor="formInput">Name of Company</label><br />
+                   <label className="label" htmlFor="formInput">Name of Company</label><br />
                    <input type="text" ref={(input)=>this.getCompanyName = input}  
                      defaultValue={this.props.location.state.thiscompany.name}      
                    />
                </div>
             
                <div className="formGroup">
-                   <label htmlFor="formInput">Contact at Company</label><br />
+                   <label className="label" htmlFor="formInput">Contact at Company</label><br />
                    <input type="text" ref={(input)=>this.getCompanyContact = input}  
                      defaultValue={this.props.location.state.thiscompany.contact}      
                    />
                </div>
             
                <div className="formGroup">
-                   <label htmlFor="formInput">Financials</label><br />
+                   <label className="label" htmlFor="formInput">Financials</label><br />
                    <input type="text" ref={(input)=>this.getCompanyFinancials = input}  
                      defaultValue={this.props.location.state.thiscompany.financials}      
                    />
                </div>
 
                <div className="formGroup">
-                   <label htmlFor="formInput">Status</label><br />
+                   <label className="label" htmlFor="formInput">Status</label><br />
                    <input type="text" ref={(input)=>this.getCompanyStatus = input}  
                      defaultValue={this.props.location.state.thiscompany.status}      
                    />
                </div>
 
-               <button>Update</button>
+               <button className="Button">Update</button>
             </form>
             
           </div>

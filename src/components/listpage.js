@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Smallcompany from './smallcompany';
-import EditCompany from './editcompany';
 import {connect} from 'react-redux';
 import {deleteCompany} from '../actions';
 import store from '../store';
-import {Redirect} from 'react-router-dom';
 
 
 
@@ -29,7 +27,7 @@ class Listpage extends Component {
     // can I pass the company.id to the editCompany component?
     editCompanyRoute = (ev,company) => {
       ev.preventDefault();
-      console.log("Company: ",company)
+      //console.log("Company: ",company)
       this.props.history.push({
           pathname: '/editcompany',
           state: { thiscompany: company }
@@ -44,23 +42,19 @@ class Listpage extends Component {
     render() {
       const companies = this.props.companies.map((company, index) => {
           return (
-              <div>
-              {company.editing ? <EditCompany key={index} comp={company}  /> :
-                  <div>
+                  <div key={index}>
                       <hr />
                       <Smallcompany key={index} {...company} />
-                      <button className="listButton" onClick={(ev) => this.editCompanyRoute(ev, company)}>Edit Company</button>
-                      <button className="listButton" onClick={(ev) => this.deleteCompany(ev, company)} >Delete Company</button>
+                      <button className="Button" onClick={(ev) => this.editCompanyRoute(ev, company)}>Edit Company</button>
+                      <button className="Button" onClick={(ev) => this.deleteCompany(ev, company)} >Delete Company</button>
                   </div>
-              }
-              </div> 
           )
       })
 
     return (
       <div className="Listpage">
         <h1>Companies Under Consideration</h1>
-          <button className="AddCompany" onClick={this.addCompanyRoute}>Add Company</button>
+          <button className="Button" onClick={this.addCompanyRoute}>Add A Company</button>
           {companies}
       </div>
     );
