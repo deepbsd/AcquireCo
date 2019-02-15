@@ -17,7 +17,7 @@ class EditCompany extends Component {
         const status = this.getCompanyStatus.value;
 
         const company = {
-            id: this.props.location.state.id,
+            id: this.props.location.state.thiscompany.id,
             name,
             contact,
             financials,
@@ -42,11 +42,11 @@ class EditCompany extends Component {
             return <Redirect to="listpage" />
         }
         //if (true){
-            //let that = this;
-            //setTimeout(function(){
-            //    console.log("company? ",that.props.location.state)
-            //    console.log("Companies in store: ",that.props.companies)
-            //},1000)
+        //    let that = this;
+        //    setTimeout(function(){
+        //        console.log("company? ",that.props.location.state)
+        //        console.log("Companies in store: ",that.props.companies)
+        //    },1000)
         //}
 
         return(
@@ -56,28 +56,28 @@ class EditCompany extends Component {
                <div className="formGroup">
                    <label htmlFor="formInput">Name of Company</label><br />
                    <input type="text" ref={(input)=>this.getCompanyName = input}  
-                     defaultValue={this.props.location.state.name}      
+                     defaultValue={this.props.location.state.thiscompany.name}      
                    />
                </div>
             
                <div className="formGroup">
                    <label htmlFor="formInput">Contact at Company</label><br />
                    <input type="text" ref={(input)=>this.getCompanyContact = input}  
-                     defaultValue={this.props.location.state.contact}      
+                     defaultValue={this.props.location.state.thiscompany.contact}      
                    />
                </div>
             
                <div className="formGroup">
                    <label htmlFor="formInput">Financials</label><br />
                    <input type="text" ref={(input)=>this.getCompanyFinancials = input}  
-                     defaultValue={this.props.location.state.financials}      
+                     defaultValue={this.props.location.state.thiscompany.financials}      
                    />
                </div>
 
                <div className="formGroup">
                    <label htmlFor="formInput">Status</label><br />
                    <input type="text" ref={(input)=>this.getCompanyStatus = input}  
-                     defaultValue={this.props.location.state.status}      
+                     defaultValue={this.props.location.state.thiscompany.status}      
                    />
                </div>
 
