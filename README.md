@@ -10,9 +10,17 @@ The App also allows you to create, update and delete data for each company.
 Because of time constraints, this app will not get a back end, so changes to data will only be made to the React DOM.  Each time
 the app reloads, the data changes will be lost (ie, no persistence).
 
+# Prototype
+
+I have a working prototype (unstyled and with overly simple data schema) [here](https://acquireco.netlify.com)
+
+# Testing
+
+Tests were not mentioned in the assignment, so I'm using my time for getting the app working.  I can add some smoke tests later...
+
 # Status
 
-Okay, I need to start thinking about getting down to work, so where am I?
+I have the CRUD operations working.  Schema is extremely simple.  Not sure how complex to make it in the limited time.
 
 TODO:
 
@@ -24,9 +32,10 @@ TODO:
 
 * _Done_: get the add and edit buttons working to fire the appropriate action creator and fire global state object gets updated
 
-* I'm going to need to figure out that companyView or Largecompany component.  What do I want to see on that?  Is that where I want to do the updateComponent
-  method?
+* _Fixed_: the actions and reducer were not working because the parameter had the wrong structure, so the state object didn't update
+
+* I'm going to need to figure out that companyView.  Do we want one of those?  It's not in the assignment.  Probably don't have time for it.
 
 * At some point, I'll think about styling.  Right now, I just want to get it to work.  Maybe then I can scrape however much ugly off I have time for.
 
-* _Not Done_: Oh yeah, get rid of them *.swp* files!  Update the .gitignore  Have to revisit this...
+* _Done_: Oh yeah, get rid of them *.swp* files!  Update the .gitignore  Have to revisit this...

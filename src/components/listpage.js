@@ -24,7 +24,6 @@ class Listpage extends Component {
       store.dispatch(deleteCompany(company));
     }
     
-    // can I pass the company.id to the editCompany component?
     editCompanyRoute = (ev,company) => {
       ev.preventDefault();
       //console.log("Company: ",company)

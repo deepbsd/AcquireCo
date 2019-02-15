@@ -16,9 +16,17 @@ hr {
   width: 80%;
 }
 
-.label {
-    margin: 7px 0;
+/* not working yet */
+label {
     text-align: left;
+}
+
+input {
+    margin-top: 5px;
+}
+
+.formGroup{
+    margin: 7px 0;
 }
 
 .Wrapper{
