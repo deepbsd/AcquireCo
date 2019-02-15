@@ -5,21 +5,21 @@ const initialState = {
             {
                 id: 1001,
                 name: "Foo Company",
-                contact: "Joe Foo",
+                contact: "Joe Foo <joefoo@foocompany.com>",
                 financials: "Really Good!",
                 status: "still researching"
             },
             {
                 id: 1002,
                 name: "Bar Company",
-                contact: "Joe Bar",
+                contact: "Joe Bar <joebar@barcompany.com>",
                 financials: "Pretty Good!",
                 status: "still researching"
             },
             {
                 id: 1003,
                 name: "Baz Company",
-                contact: "Joe Baz",
+                contact: "Joe Baz, <joebaz@bazcompany.com>",
                 financials: "Not too bad, really",
                 status: "still researching"
             }

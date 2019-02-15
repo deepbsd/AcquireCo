@@ -52,7 +52,7 @@ class Listpage extends Component {
 
     return (
       <div className="Listpage">
-        <h1>Companies Under Consideration</h1>
+        <h1>Target Companies</h1>
           <button className="Button" onClick={this.addCompanyRoute}>Add A Company</button>
           {companies}
       </div>
