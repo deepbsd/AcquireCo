@@ -16,12 +16,13 @@ const initialState = {
                 PE: "12.3",
                 PBV: "1.2",
                 DivPS: "0.37",
-                status: "still researching"
+                status: "still researching",
+                comment: "Good company, great management"
             },
             {
                 id: 1002,
                 name: "Bar Company",
-                contact: "Joe Bar <joebar@barcompany.com>",
+                contact: "Joe Bar",
                 contactEmail: "joebar@barcompany.com",
                 contactPhone: "555 1234567",
                 financials: "placeholder",
@@ -32,7 +33,8 @@ const initialState = {
                 PE: "12.3",
                 PBV: "1.2",
                 DivPS: "0.37",
-                status: "still researching"
+                status: "still researching",
+                comment: "Good company, evolving management"
             },
             {
                 id: 1003,
@@ -48,7 +50,8 @@ const initialState = {
                 PE: "12.3",
                 PBV: "1.2",
                 DivPS: "0.37",
-                status: "still researching"
+                status: "still researching",
+                comment: "Good company, needs better management"
             }
     ]
 }

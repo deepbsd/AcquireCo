@@ -25,6 +25,10 @@ I have the CRUD operations working.  Schema is extremely simple.  Not sure how c
 4:50pm Friday:  I got the landing page sorta done and have a header working.  I guess I need to work on the schema and the individual
 company view now and flesh that out...
 
+9:50am Saturday: I am on a new branch new called updateSchema.  Since the schema, as I'm calling it, can affect all aspects of the app, 
+I'm working on it on a different branch.  So far, the individual company listings are starting to use tables.  This should be okay 
+for now.  I think I can get it done by Sunday COB...
+
 TODO:
 
 * Okay, I'm gonna have to address the schema issue and make Smallcompany show some more information, which is going to ripple through

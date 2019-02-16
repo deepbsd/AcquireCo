@@ -76,6 +76,19 @@ input {
 .Wrapper{
 }
 
+table{
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+}
+
 .Linkbutton{
     background: #8e99ad;
     border: none;
