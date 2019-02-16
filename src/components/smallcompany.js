@@ -46,7 +46,6 @@ export default function Smallcompany(props){
              </tbody>
             </table>
 
-            <p>old: {props.financials}</p>
             <h4>status:</h4>
             <p>{props.Status}</p>
             <h4>comment:</h4>

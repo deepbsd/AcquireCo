@@ -29,6 +29,13 @@ company view now and flesh that out...
 I'm working on it on a different branch.  So far, the individual company listings are starting to use tables.  This should be okay 
 for now.  I think I can get it done by Sunday COB...
 
+12:38pm Saturday:  Looks like Add and Edit Company are working now.  Delete company still works.  All on the new Schema.
+
+13:14pm Saturday:  There's a gnarly bug in the Edit method.  The correct 5yrEPSG info gets passed to the Reducer, but then by the time 
+state gets back to the listcompanies component, the value doesn't appear.  Not sure if it's actually in local state at that point.  But
+it gets added to the reducer properly, so the Edit method appears to be working I think.  Just not sure where the disconnect is.  It only
+applies to the 5yrEPSG value.
+
 TODO:
 
 * Okay, I'm gonna have to address the schema issue and make Smallcompany show some more information, which is going to ripple through
