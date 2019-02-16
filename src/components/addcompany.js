@@ -12,16 +12,33 @@ class AddCompany extends Component {
         ev.preventDefault();
         const name = this.getCompanyName.value;
         const contact = this.getCompanyContact.value;
-        const financials = this.getCompanyFinancials.value;
-        const status = this.getCompanyStatus.value;
+        const contactEmail = this.getCompanyContactEmail.value;
+        const contactPhone = this.getCompanyContactPhone.value;
+        const SPValue = this.getCompanySPValue.value;
+        const DebtToCA = this.getCompanyDebtToCA.value;
+        const CR = this.getCompanyCR.value;
+        const fiveYrEPSGrowth = this.getFiveYrEPSGrowth.value;
+        const PE = this.getCompanyPE.value;
+        const PBV = this.getCompanyPBV.value;
+        const DivPS = this.getCompanyDivPS.value;
+        const Status = this.getCompanyStatus.value;
+        const comment = this.getCompanyComment.value;
 
         const company = {
             id: new Date(),
             name,
             contact,
-            financials,
-            status,
-            editing: false
+            contactEmail,
+            contactPhone,
+            SPValue,
+            DebtToCA,
+            CR,
+            fiveYrEPSGrowth,
+            PE,
+            PBV,
+            DivPS,
+            Status,
+            comment
         }
 
         //console.log("Company: ",company)
@@ -57,13 +74,58 @@ class AddCompany extends Component {
            </div>
 
            <div className="formGroup">
-               <label htmlFor="formInput">Financials</label><br />
-               <input type="text"  ref={(input)=>this.getCompanyFinancials = input} />
+               <label htmlFor="formInput">Contact Email</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyContactEmail = input} />
+           </div>
+           
+           <div className="formGroup">
+               <label htmlFor="formInput">Contact Phone</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyContactPhone = input} />
+           </div>
+
+           <div className="formGroup">
+               <label htmlFor="formInput">S&P Value Rating</label><br />
+               <input type="text"  ref={(input)=>this.getCompanySPValue = input} />
+           </div>
+
+           <div className="formGroup">
+               <label htmlFor="formInput">Debt to Current Assets</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyDebtToCA = input} />
+           </div>
+           
+           <div className="formGroup">
+               <label htmlFor="formInput">Current Ratio</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyCR = input} />
+           </div>
+
+           <div className="formGroup">
+               <label htmlFor="formInput">5 YR EPS Growth</label><br />
+               <input type="text"  ref={(input)=>this.getFiveYrEPSGrowth = input} />
+           </div>
+
+           <div className="formGroup">
+               <label htmlFor="formInput">Price to Earnings</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyPE = input} />
+           </div>
+
+           <div className="formGroup">
+               <label htmlFor="formInput">Price to Book Value</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyPBV = input} />
+           </div>
+
+           <div className="formGroup">
+               <label htmlFor="formInput">Dividend Per Share</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyDivPS = input} />
            </div>
 
            <div className="formGroup">
                <label htmlFor="formInput">Status</label><br />
                <input type="text"  ref={(input)=>this.getCompanyStatus = input} />
+           </div>
+           
+        <div className="formGroup">
+               <label htmlFor="formInput">Comment</label><br />
+               <input type="text"  ref={(input)=>this.getCompanyComment = input} />
            </div>
            <button className="Button">
               Submit

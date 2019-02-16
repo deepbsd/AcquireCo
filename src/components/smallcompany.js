@@ -7,15 +7,18 @@ export default function Smallcompany(props){
             <h2>{props.name}</h2>
             <h4>contact:</h4>
             <table>
+            <tbody>
               <tr><th>Name</th><th>Email</th><th>Phone</th></tr>
 
               <tr><td>{props.contact}</td>
               <td>{props.contactEmail}</td>
               <td>{props.contactPhone}</td>
               </tr>
+             </tbody>
             </table>
             <h4>financials:</h4>
             <table>
+             <tbody>
               <tr>
                 <th>S&P Quality</th>
                 <th>TD/CA</th>
@@ -40,13 +43,14 @@ export default function Smallcompany(props){
                 <td>{props.DivPS}</td>
                 <td>{}</td>
               </tr>
+             </tbody>
             </table>
 
             <p>old: {props.financials}</p>
             <h4>status:</h4>
-            <p>{props.status}</p>
+            <p>{props.Status}</p>
             <h4>comment:</h4>
-            <p><emph>{props.comment}</emph></p>
+            <p><em>{props.comment}</em></p>
         </div>
     );
 }

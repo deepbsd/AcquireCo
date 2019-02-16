@@ -16,7 +16,7 @@ const initialState = {
                 PE: "12.3",
                 PBV: "1.2",
                 DivPS: "0.37",
-                status: "still researching",
+                Status: "still researching",
                 comment: "Good company, great management"
             },
             {
@@ -33,7 +33,7 @@ const initialState = {
                 PE: "12.3",
                 PBV: "1.2",
                 DivPS: "0.37",
-                status: "still researching",
+                Status: "still researching",
                 comment: "Good company, evolving management"
             },
             {
@@ -50,7 +50,7 @@ const initialState = {
                 PE: "12.3",
                 PBV: "1.2",
                 DivPS: "0.37",
-                status: "still researching",
+                Status: "still researching",
                 comment: "Good company, needs better management"
             }
     ]
@@ -59,7 +59,7 @@ const initialState = {
 
 export const acquireCoReducer = (state=initialState, action) => {
     if(action.type === actions.ADD_COMPANY){
-        //console.log("action.company: ",action)
+        console.log("action.company: ",action)
         return Object.assign({}, state, {
             companies: [...state.companies, action.company]
         });
