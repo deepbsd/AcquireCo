@@ -40,6 +40,9 @@ applies to the 5yrEPSG value.
 follow the error through the reducer back to the state object.  They had different names!  Of course the value wouldn't get updated!!!
 All fixed now.
 
+15:15pm Saturday: merged updateSchema into master branch.  Also, I re-watched the YouTube video about inSiten.  Turns out they are in the
+business for mergers and acquisitions software.  I totally missed that when I first saw the video.  Wow.  I should research some more about
+M/A software now!
 
 
 TODO:
