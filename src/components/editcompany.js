@@ -18,7 +18,7 @@ class EditCompany extends Component {
         const SPValue = this.getCompanySPValue.value;
         const DebtToCA = this.getCompanyDebtToCA.value;
         const CR = this.getCompanyCR.value;
-        const fiveYrEPSG = this.getCompanyfiveYrEPSG.value;
+        const fiveYrEPSGrowth = this.getCompanyfiveYrEPSG.value;
         const PE = this.getCompanyPE.value;
         const PBV = this.getCompanyPBV.value;
         const DivPS = this.getCompanyDivPS.value;
@@ -34,7 +34,7 @@ class EditCompany extends Component {
             SPValue,
             DebtToCA,
             CR,
-            fiveYrEPSG,
+            fiveYrEPSGrowth,
             PE,
             PBV,
             DivPS,

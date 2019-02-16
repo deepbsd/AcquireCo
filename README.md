@@ -36,6 +36,12 @@ state gets back to the listcompanies component, the value doesn't appear.  Not s
 it gets added to the reducer properly, so the Edit method appears to be working I think.  Just not sure where the disconnect is.  It only
 applies to the 5yrEPSG value.
 
+15:05pm Saturday:  I took a long break and came back to the app.  I immediately saw the problem.  Simple naming error.  Just had to 
+follow the error through the reducer back to the state object.  They had different names!  Of course the value wouldn't get updated!!!
+All fixed now.
+
+
+
 TODO:
 
 * Okay, I'm gonna have to address the schema issue and make Smallcompany show some more information, which is going to ripple through
