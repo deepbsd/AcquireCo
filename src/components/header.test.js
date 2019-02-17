@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Header from './header';
 import {shallow, mount} from 'enzyme';
 
-describe('<App />', () => {
+// smoke test
+describe('<Header />', () => {
     it('renders without crashing', () => {
-        const wrapper = shallow(<App />);
+        const wrapper = shallow(<Header />);
         expect(wrapper.length).toBe(1);
     });
 
 })
+
 

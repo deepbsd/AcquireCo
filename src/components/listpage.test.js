@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Listpage from './listpage';
 import {shallow, mount} from 'enzyme';
 
-describe('<App />', () => {
+// smoke test
+describe('<Listpage />', () => {
     it('renders without crashing', () => {
-        const wrapper = shallow(<App />);
+        const wrapper = shallow(<Listpage />);
         expect(wrapper.length).toBe(1);
     });
 
 })
+
 

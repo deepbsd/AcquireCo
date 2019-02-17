@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Main from './main';
 import {shallow, mount} from 'enzyme';
 
-describe('<App />', () => {
+// smoke test
+describe('<Main />', () => {
     it('renders without crashing', () => {
-        const wrapper = shallow(<App />);
+        const wrapper = shallow(<Main />);
         expect(wrapper.length).toBe(1);
     });
 
 })
+
 

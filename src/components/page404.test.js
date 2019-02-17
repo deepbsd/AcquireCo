@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Page404 from './page404';
 import {shallow, mount} from 'enzyme';
 
-describe('<App />', () => {
+// smoke test
+describe('<Page404 />', () => {
     it('renders without crashing', () => {
-        const wrapper = shallow(<App />);
+        const wrapper = shallow(<Page404 />);
         expect(wrapper.length).toBe(1);
     });
 
 })
+
 

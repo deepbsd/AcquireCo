@@ -16,7 +16,7 @@ the app reloads, the data changes will be lost (ie, no persistence).
 
 2. Install dependencies with `npm install`
 
-3. Normally I would say run tests, but I don't have any yet...
+3. To run tests, type `npm test`
 
 4. Start your server with `npm start`
 
@@ -28,7 +28,7 @@ I have a working prototype (unstyled and with overly simple data schema) [here](
 
 # Testing
 
-Tests were not mentioned in the assignment, so I'm using my time for getting the app working.  I can add some smoke tests later...
+After installation, from the repo directory, type `npm test`  These are smoke tests only.
 
 # Technologies Used
 
@@ -92,6 +92,8 @@ be cool...
 
 14:19pm Sunday:  Okay, I took some time off this morning.  But I wanted to come back and add a 'Info' section to the App.  That was clearly
 mentioned in the instructions, and although I don't know precisely what it's for, I put one in that seems to make sense?
+
+17:19pm Sunday:  I added some smoke tests...
 
 
 TODO:
