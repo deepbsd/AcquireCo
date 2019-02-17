@@ -23,7 +23,7 @@ export default function Smallcompany(props){
                 <th>S&P Quality</th>
                 <th>TD/CA</th>
                 <th>CR</th>
-                <th>5YR EPS Gr</th>
+                <th>5 YR EPS Gr</th>
               </tr> 
               <tr>
                 <td>{props.SPValue}</td>
