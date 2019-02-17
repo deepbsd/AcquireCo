@@ -10,6 +10,18 @@ The App also allows you to create, update and delete data for each company.
 Because of time constraints, this app will not get a back end, so changes to data will only be made to the React DOM.  Each time
 the app reloads, the data changes will be lost (ie, no persistence).
 
+# Installation Instructions
+
+1. clone the repo locally with `git clone git@github.com:deepbsd/acquireco.git`
+
+2. Install dependencies with `npm install`
+
+3. Normally I would say run tests, but I don't have any yet...
+
+4. Start your server with `npm start`
+
+5. Or you could use the prototype hosted on Netlify.
+
 # Prototype
 
 I have a working prototype (unstyled and with overly simple data schema) [here](https://acquireco.netlify.com)
@@ -17,6 +29,31 @@ I have a working prototype (unstyled and with overly simple data schema) [here](
 # Testing
 
 Tests were not mentioned in the assignment, so I'm using my time for getting the app working.  I can add some smoke tests later...
+
+# Technologies Used
+
+This app was created with Create-React-App and uses React, Redux, React
+Router Dom, and Thunk.
+
+# Requirements
+
+The app must be able to
+
+* View a list of targets
+* Edit an existing target
+* Create a new target
+* Delete an existing target
+
+Must use a modern JS framework--I use React.
+Data does *not* need to be persisted.  
+Examples of data to be captured:
+* Status (eg, researching, pending approval, approved, declined)
+* Company Info  (OOPS!)
+* Key Contacts
+* Financial Performance
+
+I just noticed I didn't provide the Company Info!  Maybe I can fix this
+quickly...
 
 # Status
 
