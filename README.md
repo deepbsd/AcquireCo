@@ -20,7 +20,11 @@ Tests were not mentioned in the assignment, so I'm using my time for getting the
 
 # Status
 
-I have the CRUD operations working.  Schema is extremely simple.  Not sure how complex to make it in the limited time.
+Thursday: some CRUD operations mostly working but have some glitches...
+
+Friday morning: I have the CRUD operations except Edit
+
+Friday noonish: basic CRUD operations are working
 
 4:50pm Friday:  I got the landing page sorta done and have a header working.  I guess I need to work on the schema and the individual
 company view now and flesh that out...
@@ -44,10 +48,20 @@ All fixed now.
 business for mergers and acquisitions software.  I totally missed that when I first saw the video.  Wow.  I should research some more about
 M/A software now!
 
+9:48am Sunday: I started working on a module the ideas folder.  I don't know anything about Balance Sheets or Income Statements, but I
+googled a teensy bit, and started seeing if I could compute the ratio values from an JS Object.  Haven't tried a strict JSON object yet, but
+if I can do that, presumably I can slurp into the app an external Balance Sheet Object etc and start computing ratios from that.  That might 
+be cool...
+
 
 TODO:
 
-* Okay, I'm gonna have to address the schema issue and make Smallcompany show some more information, which is going to ripple through
+* Since Insiten is in the M&A software space, I should actually learn something about Balance Sheets and Income Statements, so I tried to
+  find my copy of _The Intelligent Investor_ by Ben Graham, Warren Buffet's old mentor(?).  I couldn't find my copy.  I think I might
+  have loaned it out to someone.  So I'll order another copy from Amazon.  Meanwhile, I did some googling and came up with a few ratios to
+  think about.  I'm playing with some ideas in the the `ideas` folder.  Doing Math inside JS objects is, err, interesting...
+
+* _Done_: Okay, I'm gonna have to address the schema issue and make Smallcompany show some more information, which is going to ripple through
   everything else, but that's okay.  It's gotta be done!
 
 * _Done_: scrape some ugly off and spiff up the appearance a little.
@@ -64,8 +78,8 @@ TODO:
 
 * _Fixed_: the actions and reducer were not working because the parameter had the wrong structure, so the state object didn't update
 
-* _Do I need this?__ I'm going to need to figure out that companyView.  Do we want one of those?  It's not in the assignment.  Probably don't have time for it.
+* _Do I need this? not now..._ I'm going to need to figure out that companyView.  Do we want one of those?  It's not in the assignment.  Probably don't have time for it.
 
-* At some point, I'll think about styling.  Right now, I just want to get it to work.  Maybe then I can scrape however much ugly off I have time for.
+* _Done for now_: At some point, I'll think about styling.  Right now, I just want to get it to work.  Maybe then I can scrape however much ugly off I have time for.
 
 * _Done_: Oh yeah, get rid of them *.swp* files!  Update the .gitignore  Have to revisit this...
