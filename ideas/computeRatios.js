@@ -1,25 +1,26 @@
 // Get the Balance Sheet Info
 
-balanceSheet = {
+const balanceSheet = {
     assets: {
-       cashAndEquivalents: null,
-       accountsReceivable: null,
-       currentAssets: this.assets.cashAndEquivalents + this.assets.accountsReceivable,
+       cashAndEquivalents: 158553,
+       accountsReceivable: 300456,
+        currentAssets: function(){
+            return this.cashAndEquivalents+this.accountsReceivable
+        },
        inventory: null,
        total: null
     },
     liabilities: {
-        debt: null,
-        longTermDebt: null,
-        rent: null,
-        tax: null,
-        utilities: null,
-        dividendsPayable: null,
-        currentLiabilities: this.liabilities.debt 
-                           + this.liabilities.rent 
-                           + this.liabilities.tax 
-                           + this.liabilities.utilites 
-                           + this.liabilities.dividentsPayable,
+        debt: 400,
+        longTermDebt: 800,
+        rent: 100,
+        tax: 200,
+        utilities: 50,
+        dividendsPayable: 8,
+        currentLiabilities: function(){
+            let currLiab = this.debt+this.rent+this.tax+this.utilities+this.dividendsPayable
+             return currLiab
+        },
         total: null
     },
     equity: {
@@ -36,7 +37,7 @@ balanceSheet = {
 }
 
 // Income Statement
-incomeStatement = {
+const incomeStatement = {
     revenuesAndOtherIncome: {
         salesAndOperatingRevenue: null,
         otherIncome: null,
@@ -53,7 +54,7 @@ incomeStatement = {
         interestExpense: null,
         otherTaxesAndDuties: null,
         total: null
-    }
+    },
 
     IncomeBeforeIncomeTaxes: null,
     IncomeTaxes: null,
@@ -64,7 +65,7 @@ incomeStatement = {
 }
 
 // Cash Flow Statement
-cashFlowStatement = {
+const cashFlowStatement = {
     operatingActivies: {
         netIncome: null,
         depreciationAndDepletion: null,
@@ -86,27 +87,36 @@ cashFlowStatement = {
         cashDividendsToShareholders: null,
         cashDividendsTootherInterests: null,
         commonStockAcquired: null
-    }
+    },
     total: null
 }
 
 
-const totalDebtToCurrentAssets = () => {
+function DtoCA(){
 
-    return (balanceSheet.liabilities.debt +
-           balanceSheet.liabilities.longTermDebt)  
-           / balanceSheet.assets.currentAssets
+    let debt = this.balanceSheet.liabilities.debt+this.balanceSheet.liabilities.longTermDebt
+    let currAsst = this.balanceSheet.assets.currentAssets()
+              
+    return debt + currAsst
 }
 
 
-const currentRatio = () => {
-    return balanceSheet.assets.currentAssets / balanceSheet.liabilities.currentLiabilities
+function currentRatio(){
+    let currAsst = this.balanceSheet.assets.currentAssets();
+    console.log("currentassts: ", currAsst)
+    let currLiab = this.balanceSheet.liabilities.currentLiabilities();
+    console.log("currentliab: ",currLiab)
+    return currAsst/currLiab
 }
 
-const fiveYrEPSGrowth = () => {
+function fiveYrEPSGrowth() {
     return "whoa"
 }
 
-const peRatio = () => {
-
+function peRatio() {
+    return "wha?"
 }
+
+module.exports = { cashFlowStatement, incomeStatement, 
+                    balanceSheet, peRatio, DtoCA,
+                    fiveYrEPSGrowth, currentRatio }
