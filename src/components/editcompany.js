@@ -15,6 +15,8 @@ class EditCompany extends Component {
         const contact = this.getCompanyContact.value;
         const contactEmail = this.getCompanyContactEmail.value;
         const contactPhone = this.getCompanyContactPhone.value;
+        const industry = this.getCompanyIndustry.value;
+        const position = this.getCompanyPosition.value;
         const SPValue = this.getCompanySPValue.value;
         const DebtToCA = this.getCompanyDebtToCA.value;
         const CR = this.getCompanyCR.value;
@@ -31,6 +33,8 @@ class EditCompany extends Component {
             contact,
             contactEmail,
             contactPhone,
+            industry,
+            position,
             SPValue,
             DebtToCA,
             CR,
@@ -96,6 +100,20 @@ class EditCompany extends Component {
                    <label className="label" htmlFor="formInput">Contact Phone</label><br />
                    <input type="tel" ref={(input)=>this.getCompanyContactPhone = input}  
                      defaultValue={this.props.location.state.thiscompany.contactPhone}      
+                   />
+               </div>
+            
+               <div className="formGroup">
+                   <label className="label" htmlFor="formInput">Industry</label><br />
+                   <input type="tel" ref={(input)=>this.getCompanyIndustry = input}  
+                     defaultValue={this.props.location.state.thiscompany.industry}      
+                   />
+               </div>
+            
+               <div className="formGroup">
+                   <label className="label" htmlFor="formInput">Position</label><br />
+                   <input type="tel" ref={(input)=>this.getCompanyPosition = input}  
+                     defaultValue={this.props.location.state.thiscompany.position}      
                    />
                </div>
             

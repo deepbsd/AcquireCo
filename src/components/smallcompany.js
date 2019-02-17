@@ -16,6 +16,13 @@ export default function Smallcompany(props){
               </tr>
              </tbody>
             </table>
+            <h4>info:</h4>
+            <table>
+            <tbody>
+            <tr><th>industry</th><th>position</th></tr>
+            <tr><td>{props.industry}</td><td>{props.position}</td></tr>
+            </tbody>
+            </table>
             <h4>financials:</h4>
             <table>
              <tbody>

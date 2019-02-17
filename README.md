@@ -48,7 +48,7 @@ Must use a modern JS framework--I use React.
 Data does *not* need to be persisted.  
 Examples of data to be captured:
 * Status (eg, researching, pending approval, approved, declined)
-* Company Info  (OOPS!)
+* Company Info  
 * Key Contacts
 * Financial Performance
 
@@ -89,6 +89,9 @@ M/A software now!
 googled a teensy bit, and started seeing if I could compute the ratio values from an JS Object.  Haven't tried a strict JSON object yet, but
 if I can do that, presumably I can slurp into the app an external Balance Sheet Object etc and start computing ratios from that.  That might 
 be cool...
+
+14:19pm Sunday:  Okay, I took some time off this morning.  But I wanted to come back and add a 'Info' section to the App.  That was clearly
+mentioned in the instructions, and although I don't know precisely what it's for, I put one in that seems to make sense?
 
 
 TODO:
