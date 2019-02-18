@@ -138,7 +138,7 @@ class AddCompany extends Component {
            
         <div className="formGroup">
                <label htmlFor="formInput">Comment</label><br />
-               <input type="text"  ref={(input)=>this.getCompanyComment = input} />
+               <textarea type="text"  ref={(input)=>this.getCompanyComment = input} />
            </div>
            <button className="Button">
               Submit

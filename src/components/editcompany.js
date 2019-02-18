@@ -175,7 +175,7 @@ class EditCompany extends Component {
                
                <div className="formGroup">
                    <label className="label" htmlFor="formInput">Comment</label><br />
-                   <input type="text" ref={(input)=>this.getCompanyComment = input}  
+                   <textarea type="text" ref={(input)=>this.getCompanyComment = input}  
                      defaultValue={this.props.location.state.thiscompany.comment}      
                    />
                </div>

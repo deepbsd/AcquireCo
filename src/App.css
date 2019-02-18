@@ -67,6 +67,7 @@ label {
 
 input {
     margin-top: 5px;
+    width: 80%;
 }
 
 .formGroup{
@@ -87,6 +88,12 @@ table, th, td {
 
 th, td {
     padding: 8px;
+}
+
+textarea {
+    height: 50px;
+    width: 80%;
+
 }
 
 .Linkbutton{
