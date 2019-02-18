@@ -27,10 +27,10 @@ export default function Smallcompany(props){
             <table>
              <tbody>
               <tr>
-                <th>S&P Quality</th>
-                <th>TD/CA</th>
-                <th>CR</th>
-                <th>5 YR EPS Gr</th>
+                <th title="Standard and Poors Quality Rating">S&P Quality</th>
+                <th title="Total Debt/Current Assets Ratio">TD/CA</th>
+                <th title="Current Ratio">CR</th>
+                <th title="5 Yr Avg Earnings Per Share Growth Rate">5 YR EPS Gr</th>
               </tr> 
               <tr>
                 <td>{props.SPValue}</td>
@@ -39,9 +39,9 @@ export default function Smallcompany(props){
                 <td>{props.fiveYrEPSGrowth}</td>
               </tr>
               <tr>
-                <th>P/E</th>
-                <th>P/BV</th>
-                <th>DivPS</th>
+                <th title="Price/Earnings Ratio">P/E</th>
+                <th title="Price/Book Value Ratio">P/BV</th>
+                <th title="Dividend Paid per Share">DivPS</th>
                 <th></th>
               </tr>
               <tr>

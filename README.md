@@ -138,6 +138,11 @@ mode.
 
 TODO:
 
-* make comments on Add and Edit into text areas
-* make inputs 80% width of parent.  they shouldn't stay small on larger screens.
+* _done_: make comments on Add and Edit into text areas
+* _done_: make inputs 80% width of parent.  they shouldn't stay small on larger screens.
+* I totally forgot to zero out user agent stylesheet on this app...  I may not do that on
+  this app.  Probably I'll wait until after a decision is made to hire me or not...
 * look at creating a breakpoint for larger screens where labels are on same line as inputs
+* on larger views, the table headings should be less cryptic.  not sure how to do that.  Is
+  that possible?  At least I can put a spelled out version of the acronym in breadcrumbs
+  perhaps.
