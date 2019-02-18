@@ -58,7 +58,7 @@ hr {
 
 /* not working yet */
 label {
-    text-align: left;
+    margin: 8px 0;
 }
 
 .landingImg{
@@ -69,6 +69,7 @@ label {
 input {
     margin-top: 5px;
     width: 80%;
+    padding: 4px;
 }
 
 .formGroup{
