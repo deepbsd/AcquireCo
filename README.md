@@ -135,3 +135,9 @@ called `after-deadline`.
 
 This is mainly CSS improvements that I couldn't see very well while I was in "make it work"
 mode.
+
+TODO:
+
+* make comments on Add and Edit into text areas
+* make inputs 80% width of parent.  they shouldn't stay small on larger screens.
+* look at creating a breakpoint for larger screens where labels are on same line as inputs
