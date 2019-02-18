@@ -33,7 +33,7 @@ After installation, from the repo directory, type `npm test`  These are smoke te
 # Technologies Used
 
 This app was created with Create-React-App and uses React, Redux, React
-Router Dom, and Thunk.
+Router Dom, and Thunk. Jest and Enzyme are installed for testing.
 
 # Requirements
 
@@ -125,3 +125,13 @@ TODO:
 * _Done for now_: At some point, I'll think about styling.  Right now, I just want to get it to work.  Maybe then I can scrape however much ugly off I have time for.
 
 * _Done_: Oh yeah, get rid of them *.swp* files!  Update the .gitignore  Have to revisit this...
+
+# After Deadline
+
+It turns out that I want to continue to work on this little app.  There are plenty of things
+I didn't get around too before the deadline for submission.  In fact, I don't even know if
+the team are in the offices today on President's Day.  But I'm putting my work in a branch
+called `after-deadline`.
+
+This is mainly CSS improvements that I couldn't see very well while I was in "make it work"
+mode.
