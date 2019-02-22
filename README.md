@@ -97,6 +97,8 @@ mentioned in the instructions, and although I don't know precisely what it's for
 
 ---
 
+###### after-deadline changes
+
 09:33am Friday Feb 22, 2019:  Apparently there was a disconnect in Insiten's email server, and they didn't get
 my questions of a week ago.  They graciously gave me some more time to polish my app over the weekend.  I'll
 dive back into the app and see what I can do to make it lovlier!  
