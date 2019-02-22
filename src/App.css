@@ -76,6 +76,14 @@ label {
     width: 100%;
 }
 
+.landing {
+    color: white;
+    background-color: gray;
+    width: 80%;
+    margin: 0 auto;
+    opacity: .7;
+}
+
 input {
     margin-top: 5px;
     width: 80%;
@@ -87,6 +95,13 @@ input {
 }
 
 .Wrapper{
+}
+
+.slideshow-container {
+    height: 90%;
+    width: 90%;
+    margin: -25px 0;
+    z-index: -1;
 }
 
 table{

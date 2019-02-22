@@ -104,6 +104,9 @@ get my questions of a week ago today.  I pressed on with my best judgments, but 
 more time to polish my app over the weekend.  I'll dive back into the app and see what I can do to make it
 lovlier!  
 
+_16:39pm Friday Feb 22, 2019_: Spent most of the day trying to get react-slidez plugin to work.  It's finally
+showing up but I don't understand the styles that are built in.  The Slideshow component doesn't seem to be
+respecting its parent components.  Not sure what's happening.
 
 
 TODO:
