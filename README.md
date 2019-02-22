@@ -95,8 +95,20 @@ mentioned in the instructions, and although I don't know precisely what it's for
 
 17:19pm Sunday:  I added some smoke tests...
 
+---
+
+09:33am Friday Feb 22, 2019:  Apparently there was a disconnect in Insiten's email server, and they didn't get
+my questions of a week ago.  They graciously gave me some more time to polish my app over the weekend.  I'll
+dive back into the app and see what I can do to make it lovlier!  
+
+
 
 TODO:
+
+* merged the `after-deadline` branch into the master branch.  I think I'll keep making changes to the
+  `after-deadline` branch that could possibly break the app.  
+
+---
 
 * Since Insiten is in the M&A software space, I should actually learn something about Balance Sheets and Income Statements, so I tried to
   find my copy of _The Intelligent Investor_ by Ben Graham, Warren Buffet's old mentor(?).  I couldn't find my copy.  I think I might
