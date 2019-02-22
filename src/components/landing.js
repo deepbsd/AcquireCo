@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Redirect} from 'react-router-dom';
-import landingImage from '../images/shaking_hands.jpg';
+import landingImage from '../images/shaking_hands_color.jpg';
 
 
 
