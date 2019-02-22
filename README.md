@@ -99,16 +99,26 @@ mentioned in the instructions, and although I don't know precisely what it's for
 
 ##### Second Submission
 
-09:33am Friday Feb 22, 2019:  Apparently there was a disconnect in Insiten's email server, and they didn't get
-my questions of a week ago.  They graciously gave me some more time to polish my app over the weekend.  I'll
-dive back into the app and see what I can do to make it lovlier!  
+_09:33am Friday Feb 22, 2019_:  Apparently there was a disconnect in Insiten's email server, and they didn't
+get my questions of a week ago today.  I pressed on with my best judgments, but they graciously gave me some
+more time to polish my app over the weekend.  I'll dive back into the app and see what I can do to make it
+lovlier!  
 
 
 
 TODO:
 
-* merged the `after-deadline` branch into the master branch.  I think I'll keep making changes to the
-  `after-deadline` branch that could possibly break the app.  
+* _done_: merged the `after-deadline` branch into the master branch.  I think I'll keep making changes to the
+  `after-deadline` branch that could possibly break the app.  As of now, the Add/Edit form pages are
+  responsive as they should have been from the start.
+* Honestly, I should have thought about overall themes for the site.  I just went what worked the first day
+  without thinking about overall UE/UI choices and decisions.  I should probably start with this after taking
+  the ugly off the forms.
+* Style the forms to look better.  They look pretty awful. Try using some form group styles.
+* Get the Landing Page to look more professional.  Have to look for inspiration on the Web.
+* These todos should keep me busy for today...  I'll be back after I think more about the overall choices for
+  the app.
+
 
 ---
 
