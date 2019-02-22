@@ -8,10 +8,11 @@
 .Button{
   background: #8e99ad;
   border: none;
-  color: white;
-  margin: 10px 5px;
-  padding: 9px;
   border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin: 10px 5px;
+  padding: 10px;
 }
 
 .Button:hover {
@@ -36,7 +37,6 @@ a:hover {
 
 .Links {
     color: white;
-    /*background-color: gray;*/
     background-color: #8e99ad;
     padding: 15px 20px;
     text-align: right;
@@ -98,28 +98,4 @@ textarea {
 
 }
 
-.Linkbutton{
-    background: #8e99ad;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-}
 
-/*
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-*/
