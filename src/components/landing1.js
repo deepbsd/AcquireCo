@@ -44,16 +44,18 @@ class Landing extends Component {
       <div className="App">
         <div className="Wrapper">
            <Slideshow
+             showArrows={false}
              autoplay
              defaultIndex={1}
-             effect={'fade'}
+             effect={'bounce-left'}
              slideInterval={5000}
              slides={slides}
              height={'70%'}
-             width={'99%'} >
+             width={'100%'} >
            </Slideshow>
-            <div className="landing">
-            <h1 className="landingHdr">Welcome to AcquireCo!</h1>
+           <div className="landing">
+
+           <h1 className="landingHdr">Welcome to AcquireCo!</h1>
 
             <p className="IntroPara">With AcquireCo you can check on your latest company targets for acquisition and check their status, review their
         financials and look up personnel contacts at their company</p>
