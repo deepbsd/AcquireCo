@@ -43,16 +43,24 @@ class Landing extends Component {
     return (
       <div className="App">
         <div className="Wrapper">
-           <Slideshow
-             showArrows={false}
-             autoplay
-             defaultIndex={1}
-             effect={'bounce-left'}
-             slideInterval={5000}
-             slides={slides}
-             height={'70%'}
-             width={'100%'} >
-           </Slideshow>
+
+        
+          <div className="separator">
+              <div className="slideshow">
+                   <Slideshow
+                     showArrows={false}
+                     autoplay
+                     defaultIndex={1}
+                     effect={'fade'}
+                     slideInterval={5000}
+                     slides={slides}
+                     height={'70%'}
+                     width={'100%'} >
+                   </Slideshow>
+               </div>
+          </div>
+        </div>
+
            <div className="landing">
 
            <h1 className="landingHdr">Welcome to AcquireCo!</h1>
@@ -62,7 +70,7 @@ class Landing extends Component {
 
             <button className="Button"  onClick={this.proceed}>Proceed</button>
 
-          </div>
+
         </div>
       </div>
     );
