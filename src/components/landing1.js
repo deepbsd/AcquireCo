@@ -54,7 +54,7 @@ class Landing extends Component {
                      effect={'fade'}
                      slideInterval={5000}
                      slides={slides}
-                     height={'70%'}
+                     height={'100%'}
                      width={'100%'} >
                    </Slideshow>
                </div>
@@ -66,7 +66,9 @@ class Landing extends Component {
            <h1 className="landingHdr">Welcome to AcquireCo!</h1>
 
             <p className="IntroPara">With AcquireCo you can check on your latest company targets for acquisition and check their status, review their
-        financials and look up personnel contacts at their company</p>
+        financials and look up personnel contacts at their company.</p>
+            <p className="IntroPara">The planet runs on the hard work of countless people.  AcquireCo's mission is to ensure it's partners
+             have strong financial performance so those workers can continue doing their invaluable work every day.</p>
 
             <button className="Button"  onClick={this.proceed}>Proceed</button>
 
