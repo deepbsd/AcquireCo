@@ -126,18 +126,24 @@ yet found a downside to this decision.  Also, I've made some other styling chang
 padding to inputs and changing the font-family of inputs to monospace, so they're a little easier to edit and
 read.
 
+_17:54pm Saturday Feb 23, 2019_: I took a break and came back.  At this point I'm only changing small things I
+think.  Mainly hover, focus on textarea and inputs changing background-color.  I seem to be finding some
+anomalies on Safari iphone, and perhaps iphone chrome browsers.  Can't seem to duplicate it on other devices.
+
 
 TODO:
 
 * _done_: merged the `after-deadline` branch into the master branch.  I think I'll keep making changes to the
   `after-deadline` branch that could possibly break the app.  As of now, the Add/Edit form pages are
   responsive as they should have been from the start.
-* Honestly, I should have thought about overall themes for the site.  I just went what worked the first day
+* _done_: Honestly, I should have thought about overall themes for the site.  I just went what worked the first day
   without thinking about overall UE/UI choices and decisions.  I should probably start with this after taking
-  the ugly off the forms.
-* Style the forms to look better.  They look pretty awful. Try using some form group styles.
+  the ugly off the forms.  I added fieldsets with legends, also background-color with focus and hover changes.
+* _done_: (see above) Style the forms to look better.  They look pretty awful. Try using some form group styles.
 * Get the Landing Page to look more professional.  Have to look for inspiration on the Web.
-* These todos should keep me busy for today...  I'll be back after I think more about the overall choices for
+* _done_: (Once the landing page got working, it started getting easier--now working on checking functionality
+  for mobile devices)  These todos should keep me busy for today...  I'll be back after I think more about the 
+  overall choices for
   the app.
 * rename the landing1 filename to landing so the two elements are not so confusing.  Probably should keep the
   old component and rename it landing-old or something.
