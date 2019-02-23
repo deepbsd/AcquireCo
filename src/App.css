@@ -112,6 +112,10 @@ input {
     padding: 8px;
 }
 
+input:focus, input:hover {
+    background-color: cornsilk;
+}
+
 .formGroup{
     margin: 7px 0;
 }
