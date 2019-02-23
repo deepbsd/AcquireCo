@@ -130,6 +130,8 @@ _17:54pm Saturday Feb 23, 2019_: I took a break and came back.  At this point I'
 think.  Mainly hover, focus on textarea and inputs changing background-color.  I seem to be finding some
 anomalies on Safari iphone, and perhaps iphone chrome browsers.  Can't seem to duplicate it on other devices.
 
+_18:04pm Saturday Feb 23, 2019_: changed name of landing1.js to landing.js, old landing.js file changed to 
+old-landing.js.  Had to update Router in main.js accordingly.
 
 TODO:
 
