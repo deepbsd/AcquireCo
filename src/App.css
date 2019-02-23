@@ -26,7 +26,7 @@
 
 .Button:hover {
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 1;
     font-weight: bold;
     background-color: darkgreen;
 }
@@ -114,7 +114,7 @@ input {
     padding: 8px;
 }
 
-input:focus, input:hover {
+input:focus, input:hover, textarea:focus, textarea:hover {
     background-color: cornsilk;
 }
 
