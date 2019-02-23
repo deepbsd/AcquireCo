@@ -139,7 +139,8 @@ TODO:
 * Get the Landing Page to look more professional.  Have to look for inspiration on the Web.
 * These todos should keep me busy for today...  I'll be back after I think more about the overall choices for
   the app.
- 
+* rename the landing1 filename to landing so the two elements are not so confusing.  Probably should keep the
+  old component and rename it landing-old or something.
 
 ---
 

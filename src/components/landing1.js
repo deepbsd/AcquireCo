@@ -67,7 +67,7 @@ class Landing extends Component {
 
             <p className="IntroPara">With AcquireCo you can check on your latest company targets for acquisition and check their status, review their
         financials and look up personnel contacts at their company.</p>
-            <p className="IntroPara">The planet runs on the hard work of countless people.  AcquireCo's mission is to ensure it's partners
+            <p className="IntroPara">The planet runs on the hard work of countless people.  AcquireCo's mission is to ensure its partners
              have strong financial performance so those workers can continue doing their invaluable work every day.</p>
 
             <button className="Button"  onClick={this.proceed}>Proceed</button>
