@@ -86,6 +86,17 @@ input {
     margin: 7px 0;
 }
 
+fieldset{
+    border: 2px solid darkslategray;
+    border-radius: 5px;
+    width: 80%;
+    margin: 15px auto;
+}
+
+fieldset legend {
+    text-align: right;
+}
+
 .Wrapper{
 }
 
