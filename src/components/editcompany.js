@@ -82,6 +82,9 @@ class EditCompany extends Component {
                    />
                </div>
             
+
+               <fieldset>
+               <legend>Company Contact Information</legend>
                <div className="formGroup">
                    <label className="label" htmlFor="formInput">Contact at Company</label><br />
                    <input type="text" ref={(input)=>this.getCompanyContact = input}  
@@ -102,7 +105,10 @@ class EditCompany extends Component {
                      defaultValue={this.props.location.state.thiscompany.contactPhone}      
                    />
                </div>
+               </fieldset>
             
+               <fieldset>
+               <legend>Company Information</legend>
                <div className="formGroup">
                    <label className="label" htmlFor="formInput">Industry</label><br />
                    <input type="tel" ref={(input)=>this.getCompanyIndustry = input}  
@@ -116,7 +122,10 @@ class EditCompany extends Component {
                      defaultValue={this.props.location.state.thiscompany.position}      
                    />
                </div>
+               </fieldset>
             
+               <fieldset>
+               <legend>Financial Information</legend>
                <div className="formGroup">
                    <label className="label" htmlFor="formInput">S&P Quality</label><br />
                    <input type="text" ref={(input)=>this.getCompanySPValue = input}  
@@ -165,7 +174,10 @@ class EditCompany extends Component {
                      defaultValue={this.props.location.state.thiscompany.DivPS}      
                    />
                </div>
+               </fieldset>
 
+              <fieldset>
+               <legend>Acquireco Status</legend>
                <div className="formGroup">
                    <label className="label" htmlFor="formInput">Status</label><br />
                    <input type="text" ref={(input)=>this.getCompanyStatus = input}  
@@ -179,6 +191,7 @@ class EditCompany extends Component {
                      defaultValue={this.props.location.state.thiscompany.comment}      
                    />
                </div>
+              </fieldset>
 
 
                <button className="Button">Update</button>
