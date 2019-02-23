@@ -72,6 +72,8 @@ class AddCompany extends Component {
                <input type="text" ref={(input)=>this.getCompanyName = input}  />
            </div>
 
+           <fieldset>
+           <legend>Company Contact Information</legend>
            <div className="formGroup">
                <label htmlFor="formInput">Contact at Company</label><br />
                <input type="text"  ref={(input)=>this.getCompanyContact = input} />
@@ -86,7 +88,10 @@ class AddCompany extends Component {
                <label htmlFor="formInput">Contact Phone</label><br />
                <input type="text"  ref={(input)=>this.getCompanyContactPhone = input} />
            </div>
+           </fieldset>
                
+           <fieldset>
+           <legend>Company Information</legend>
            <div className="formGroup">
                <label className="label" htmlFor="formInput">Industry</label><br />
                <input type="tel" ref={(input)=>this.getCompanyIndustry = input}  />
@@ -95,7 +100,10 @@ class AddCompany extends Component {
                <label className="label" htmlFor="formInput">Position</label><br />
                <input type="tel" ref={(input)=>this.getCompanyPosition = input}  />
            </div>
+           </fieldset>
             
+           <fieldset>
+           <legend>Financial Information</legend>
            <div className="formGroup">
                <label htmlFor="formInput">S&P Value Rating</label><br />
                <input type="text"  ref={(input)=>this.getCompanySPValue = input} />
@@ -130,16 +138,24 @@ class AddCompany extends Component {
                <label htmlFor="formInput">Dividend Per Share</label><br />
                <input type="text"  ref={(input)=>this.getCompanyDivPS = input} />
            </div>
+           </fieldset>
 
+           <fieldset>
+           <legend>Acquireco Status</legend>
            <div className="formGroup">
                <label htmlFor="formInput">Status</label><br />
                <input type="text"  ref={(input)=>this.getCompanyStatus = input} />
            </div>
            
-        <div className="formGroup">
+           <div className="formGroup">
                <label htmlFor="formInput">Comment</label><br />
                <textarea type="text"  ref={(input)=>this.getCompanyComment = input} />
            </div>
+           </fieldset>
+
+
+
+
            <button className="Button">
               Submit
            </button>
