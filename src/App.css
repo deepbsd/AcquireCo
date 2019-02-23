@@ -26,6 +26,9 @@
 
 .Button:hover {
     cursor: pointer;
+    opacity: 0.9;
+    font-weight: bold;
+    background-color: darkgreen;
 }
 
 .Header {
@@ -97,7 +100,7 @@ label {
     width: 80%;
     margin: 0 auto;
     opacity: .5;
-    top: 55%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%);
 }
