@@ -104,6 +104,17 @@ get my questions of a week ago today.  I pressed on with my best judgments, but 
 more time to polish my app over the weekend.  I'll dive back into the app and see what I can do to make it
 lovlier!  
 
+_10:13am Saturday Feb 23, 2019_: Spent most of yesterday trying to get a slideshow component to play nice on
+the `animation-experiment` branch.  In the end, the component is working, but the component is not playing
+nicely with other components inside of `Landing`.  I'm gonna need some help on this one.
+
+_10:15am Saturday Feb 23, 2019_: I *did* manage to get formgroups working on Add and Edit using the fieldset
+element.  What a lifesaver!  It's an easy element to work with, because of it's built-in `legend` element, and
+because it's an HTML element, you can style it very easily.  Whew!  That was easy, which is a nice change of
+pace.
+
+_10:19 Saturday Feb 23, 2019_: Changed hover color on header from maroon to yellow.  I thought I already did
+that?  Hmmm.  Must be on another branch...
 
 
 TODO:
