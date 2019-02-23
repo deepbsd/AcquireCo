@@ -36,6 +36,7 @@ class Header extends Component {
 
         return (
             <div className="Links">
+            <span className="hdrLogo">AcquireCo</span>
                {links}
             </div>
         )
