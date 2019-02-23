@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Route, Switch} from 'react-router-dom';
-import Landing from './landing1';
+import Landing from './landing';
 import AddCompany from './addcompany';
 import EditCompany from './editcompany';
 import Listpage from './listpage';
