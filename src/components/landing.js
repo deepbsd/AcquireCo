@@ -46,7 +46,6 @@ class Landing extends Component {
 
         
           <div className="separator">
-              <div className="slideshow">
                    <Slideshow
                      showArrows={false}
                      autoplay
@@ -57,7 +56,6 @@ class Landing extends Component {
                      height={'100%'}
                      width={'100%'} >
                    </Slideshow>
-               </div>
           </div>
         </div>
 

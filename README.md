@@ -133,6 +133,11 @@ anomalies on Safari iphone, and perhaps iphone chrome browsers.  Can't seem to d
 _18:04pm Saturday Feb 23, 2019_: changed name of landing1.js to landing.js, old landing.js file changed to 
 old-landing.js.  Had to update Router in main.js accordingly.
 
+_21:05pm Saturday Feb 23, 2019_: I hopped into a Thinkful help session, and Felicia Rosemund showed me the mobile device icon on
+the developer tools!  That was perfect!!!!!   I think the problem with the gap on mobile devices was being caused by an extra dev
+in the Slideshow component.  I had put it in there when I was trying to troubleshoot a different problem.  It wound up causing
+another problem.  I'll just have to see if removing it fixes the problem.  So far, it seems fixed.  Fingers crossed!
+
 TODO:
 
 * _done_: merged the `after-deadline` branch into the master branch.  I think I'll keep making changes to the
