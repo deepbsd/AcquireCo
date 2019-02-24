@@ -138,7 +138,8 @@ the developer tools!  That was perfect!!!!!   I think the problem with the gap o
 in the Slideshow component.  I had put it in there when I was trying to troubleshoot a different problem.  It wound up causing
 another problem.  I'll just have to see if removing it fixes the problem.  So far, it seems fixed.  Fingers crossed!
 
-_9:33am Sunday Feb 24, 2019_: Took off the min-width property of the App style.  That fixed a bunch of problems.
+_9:33am Sunday Feb 24, 2019_: Took off the min-width property of the App style.  That fixed a bunch of problems. Also changed 
+position absolute .Landing class to 35% from top now.  
 
 TODO:
 
