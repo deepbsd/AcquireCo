@@ -45,18 +45,18 @@ class Landing extends Component {
         <div className="Wrapper">
 
         
-          <div className="separator">
-                   <Slideshow
-                     showArrows={false}
-                     autoplay
-                     defaultIndex={1}
-                     effect={'fade'}
-                     slideInterval={5000}
-                     slides={slides}
-                     height={'100%'}
-                     width={'100%'} >
-                   </Slideshow>
-          </div>
+        {/* <div className="separator">  */}
+               <Slideshow
+                 showArrows={false}
+                 autoplay
+                 defaultIndex={1}
+                 effect={'fade'}
+                 slideInterval={5000}
+                 slides={slides}
+                 height={'100%'}
+                 width={'100%'} >
+               </Slideshow>
+        {/* </div>   */}
         </div>
 
            <div className="landing">
