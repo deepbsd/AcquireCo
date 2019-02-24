@@ -26,6 +26,8 @@ the app reloads, the data changes will be lost (ie, no persistence).
 
 I have a working prototype (unstyled and with overly simple data schema) [here](https://acquireco.netlify.com)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/360cba92-b1b1-4c2f-874a-73f4583744af/deploy-status)](https://app.netlify.com/sites/acquireco/deploys)
+
 # Testing
 
 After installation, from the repo directory, type `npm test`  These are smoke tests only.
@@ -140,6 +142,10 @@ another problem.  I'll just have to see if removing it fixes the problem.  So fa
 
 _9:33am Sunday Feb 24, 2019_: Took off the min-width property of the App style.  That fixed a bunch of problems. Also changed 
 position absolute .Landing class to 35% from top now.  
+
+_10:10am: Sunday Feb 24, 2019_: Okay, I think I have enough CSS goodness to let it go for now.  I could go on and on
+here, but I've got to put a pin in it at some point.  If I get a chance to look at it with Matthew tonight, then that's
+good.  But he won't be available until late tonight, or perhaps even tomorrow, which is too late.
 
 TODO:
 
