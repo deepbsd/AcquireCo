@@ -142,12 +142,12 @@ TODO:
   without thinking about overall UE/UI choices and decisions.  I should probably start with this after taking
   the ugly off the forms.  I added fieldsets with legends, also background-color with focus and hover changes.
 * _done_: (see above) Style the forms to look better.  They look pretty awful. Try using some form group styles.
-* Get the Landing Page to look more professional.  Have to look for inspiration on the Web.
+* _done_: Get the Landing Page to look more professional.  Have to look for inspiration on the Web.
 * _done_: (Once the landing page got working, it started getting easier--now working on checking functionality
   for mobile devices)  These todos should keep me busy for today...  I'll be back after I think more about the 
   overall choices for
   the app.
-* rename the landing1 filename to landing so the two elements are not so confusing.  Probably should keep the
+* _done_: rename the landing1 filename to landing so the two elements are not so confusing.  Probably should keep the
   old component and rename it landing-old or something.
 
 ---
