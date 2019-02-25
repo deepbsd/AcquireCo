@@ -147,6 +147,16 @@ _10:10am: Sunday Feb 24, 2019_: Okay, I think I have enough CSS goodness to let 
 here, but I've got to put a pin in it at some point.  If I get a chance to look at it with Matthew tonight, then that's
 good.  But he won't be available until late tonight, or perhaps even tomorrow, which is too late.
 
+_22:31pm: Sunday Feb 24, 2019_: My mentor got back into two about an hour ago after 29 hours on the road.  But he still found a
+few minutes to look at my app with me, and I learned that when you hover over an anchor, you don't want the effect on the text to
+move other components or neighborhing elements.  I have a problem with that on my header because of a `font-weight` effect being
+applied on hover.  But I made each anchor 100px wide, so hopefully the expansion happens within that width and is minimized.  I
+actually like to see the text turning bold; I think it looks nice.  But I cannot seem to remove the bumping effect on the
+neighboring anchors.  I did have an opaque button on the Landing Div on the landing page.  I didn't want that.  Matt suggested I
+apply the `rgb(0,0,0,0.5)` argument to the background-color, which will leave the button solid and non-see through.  I did that
+and I think it looks much better.  Great idea!!!  Also, Matt said to make the Logo clickable on the front and return to the
+Landing page.  I think I can do that.  Then, it's submission time!
+
 TODO:
 
 * _done_: merged the `after-deadline` branch into the master branch.  I think I'll keep making changes to the
@@ -163,6 +173,8 @@ TODO:
   the app.
 * _done_: rename the landing1 filename to landing so the two elements are not so confusing.  Probably should keep the
   old component and rename it landing-old or something.
+* _done_: opacity is now applied to LandingDiv background instead of entire component.  Button itself is not opaque.
+* _done_: AcquireCo logo is not clickable with a <Link/> element.
 
 ---
 

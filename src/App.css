@@ -46,9 +46,15 @@
     font-style: italic;
     font-variant: small-caps;
     margin-right: 20%;
-
 }
 
+.hdrLink {
+    text-decoration: none;
+}
+
+a {
+    width: 120px;
+} 
 
 a:visited {
     color: white;
@@ -68,7 +74,6 @@ a:hover {
     text-align: center;
     width: 100%;
 }
-
 
 hr {
   width: 80%;
@@ -98,10 +103,9 @@ label {
     position: absolute; 
     border-radius: 5px;
     color: white;
-    background-color: black;
+    background-color: rgb(0,0,0,0.5);
     width: 90%;
     margin: 0 auto;
-    opacity: .5;
     bottom: 13%;
     left: 50%;
     transform: translateX(-50%);

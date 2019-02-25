@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import NavItem from './navitem';
+import {Link} from "react-router-dom";
 
 
 
@@ -36,7 +37,7 @@ class Header extends Component {
 
         return (
             <div className="Links">
-            <span className="hdrLogo">AcquireCo</span>
+            <span className="hdrLogo"><Link to="/" className="hdrLink">AcquireCo</Link></span>
                {links}
             </div>
         )
