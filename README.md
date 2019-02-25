@@ -157,6 +157,9 @@ apply the `rgb(0,0,0,0.5)` argument to the background-color, which will leave th
 and I think it looks much better.  Great idea!!!  Also, Matt said to make the Logo clickable on the front and return to the
 Landing page.  I think I can do that.  Then, it's submission time!
 
+_9:11am Monday Feb 25, 2019_: Remembered how to solve the header link hover disruption problem.  `display: inline-block;` and a
+width value.  I said 35px.  I'll update master just this once.  Couldn't remember this last night!
+
 TODO:
 
 * _done_: merged the `after-deadline` branch into the master branch.  I think I'll keep making changes to the
