@@ -2,8 +2,8 @@
 
 const balanceSheet = {
     assets: {
-       cashAndEquivalents: 158553,
-       accountsReceivable: 300456,
+       cashAndEquivalents: 553,
+       accountsReceivable: 456,
         currentAssets: function(){
             return this.cashAndEquivalents+this.accountsReceivable
         },
@@ -34,6 +34,16 @@ const balanceSheet = {
         totalEquity: null,
         totalLibilitiesAndEquity: null
     }
+}
+
+
+// Contains recent share related information
+const shareRelated = {
+    sharePrice: 45.23,
+    earningsPerShare: 3.38,
+    debtPerShare: 38.92,
+    bookValuePerShare: 31.82,
+    fiveYrEarningsGrowthPerShare: 0.64
 }
 
 // Income Statement
@@ -92,31 +102,9 @@ const cashFlowStatement = {
 }
 
 
-function DtoCA(){
-
-    let debt = this.balanceSheet.liabilities.debt+this.balanceSheet.liabilities.longTermDebt
-    let currAsst = this.balanceSheet.assets.currentAssets()
-              
-    return debt + currAsst
+module.exports = {
+      balanceSheet, shareRelated,
+      incomeStatement, cashFlowStatement
 }
 
 
-function currentRatio(){
-    let currAsst = this.balanceSheet.assets.currentAssets();
-    console.log("currentassts: ", currAsst)
-    let currLiab = this.balanceSheet.liabilities.currentLiabilities();
-    console.log("currentliab: ",currLiab)
-    return currAsst/currLiab
-}
-
-function fiveYrEPSGrowth() {
-    return "whoa"
-}
-
-function peRatio() {
-    return "wha?"
-}
-
-module.exports = { cashFlowStatement, incomeStatement, 
-                    balanceSheet, peRatio, DtoCA,
-                    fiveYrEPSGrowth, currentRatio }
