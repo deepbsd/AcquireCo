@@ -1,7 +1,5 @@
 // import the JSON
-//let cf = require('./computeRatios');
-
-let compA = require('./let)
+let cf = require('./computeRatios');
 
 let balanceSheet = cf.balanceSheet;
 let shareRelated = cf.shareRelated;
